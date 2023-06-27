@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700;900&display=swap');
+/* header , el nav y h1 */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.titulo{
+    color: #1b0753;
+}
+.portada{
+    background-image: url(../multimedia/img/El\ origen\ del\ nombre\ michi.png);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+h1{
+    color:#1b0753;
+    font-size: 50px;
+    text-align: center;
+    font-weight:900;
+
+}
+
+header h2{
+    color: #1b0753;
+    font-style: italic;
+    text-align: center;
+}
+.navegador{
+    background-color: #1b0753;
+    padding: 10px;
+}
+.navegador ul{
+    list-style: none;
+}
+.navegador ul li a{
+    color: white;
+    text-decoration:none;
+}
+
+/* ---- fin header , el nav y h1 */
+/* tarjeta */
+.tarjeta{
+    width: 320px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+
+}
+.tarjeta h2{
+    color: #1b0753;
+    font-size: 20px;
+}
+.tarjeta p {
+    color: #1b0753;
+    font-size: 16px;
+}
+
+.tarjeta .imagen-chica{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.border-redondiado{
+    border-radius: 5px;
+}
+
+
+
