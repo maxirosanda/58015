@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100;400;900&display=swap');
+@font-face { 
+    font-family: "Avocado"; 
+    src: url("../fonts/vintage_avocado/VintageAvocado.ttf"); 
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.navegador{
+    background-color: blue;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+.navegador ul{
+    list-style-type: none;
+}
+.navegador ul li a{
+    color: white;
+    text-decoration: none;
+}
+.tituloPrincipal{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.caja{
+    width: 250px;
+    height: 200px;
+    /*overflow: scroll;*/
+    margin: 10px; 
+    /*
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    */
+    /* margin: 10px 15px 20px 25px; */
+    /*
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    */
+    /*padding: 10px 20px 5px;*/
+    padding: 20px;
+    /*
+    border-width: 4px;
+    border-style: groove;
+    border-color: blue;
+    */
+    border: 4px groove blue;
+    /*
+    border-top: 3px solid #a80808;
+    border-right: 4px solid #1e0285;
+    border-bottom: 4px solid #0d9e39;
+    border-left: 8px solid #b3de09;
+    */
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+.encabezado{
+    width: 100%;
+    height: 300px;
+    background-image: url(../multimedia/img/paisaje4.jpg);
+    background-size: cover;
+}
+.resaltado{
+    background-color: yellow;
+}
+
