@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .navegador{
     background-color: rgb(21, 21, 135);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .navegador img {
     width: 64px;
@@ -16,12 +22,14 @@
 
 .navegador ul {
     list-style: none;
+    display: flex;
 }
 .navegador ul li a{
     color: white;
     text-decoration: none;
     display: block;
     padding: 10px 15px;
+    font-size: 20px;
 }
 .encabezado{
     background-image: url(../multimedia/img/taller-reparacion.jpg);
@@ -29,6 +37,9 @@
     height: 450px;
     background-size: cover;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .encabezado h1{
     font-size: 48px;
@@ -39,13 +50,20 @@
     font-size: 24px;
     color: white;
 }
-
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .producto{
     width: 270px;
     border: 1px solid #000000;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .producto img{
@@ -64,36 +82,96 @@
     margin: 5px;
     border: none;
     border-radius: 5px;
+    font-size: 20px;
 
 }
 
 .pie-de-pagina{
     background-color: rgb(21, 21, 135) ;
     color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+
 }
 .pie-de-pagina .info-empresa{
-    width: 300px;
     padding: 15px;
+    
+}
+.pie-de-pagina .info-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pie-de-pagina .info-empresa h2{
+    margin: 10px 0px;
 }
 
-.pie-de-pagina .info-contacto{
-    width: 300px;
-    text-align: center;
-}
 .pie-de-pagina .redes{
     font-size: 40px;
-    width: 300px;
-    text-align: center;
-}
 
+}
+.form-contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,576px);
+    justify-content: center;
+    margin: 100px 0px 200px 0px;
+}
+.form-info{
+    background-image:url(../multimedia/img/paisaje1.jpg) ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 5px solid rgb(21, 21, 135);
+    border-right: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-shadow: 2px 2px 6px #000000;
+}
+.form-info h3{
+    font-size: 32px;
+}
+.form-info p {
+    font-size: 24px;
+}
 .form-registro{
     border: 5px solid rgb(21, 21, 135) ;
-    margin: 10px;
+    border-left: 0px;
     padding: 20px;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
 }
 .form-registro input{
-    width: 240px;
-    border: 0px;
-    border-bottom: 2px solid rgb(21, 21, 135) ;
+    border: 2px solid rgb(21, 21, 135);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+.whatsapp{
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+.whatsapp i{
+    font-size: 48px;
+    color: white;
 }
