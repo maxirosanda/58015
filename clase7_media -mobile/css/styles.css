@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cajaColores{
+    width: 90%;
+    height: 300px;
+    background-color: rgb(238, 255, 5);
+    margin: 10px 5%;
+}
+
+@media(min-width:576px){
+    .cajaColores{
+        background-color: green;
+    }
+}
+
+@media(min-width:768px){
+    .cajaColores{
+        background-color: rgb(4, 3, 71);
+    }
+}
+
+@media(min-width:992px){
+    .cajaColores{
+        background-color: rgb(168, 30, 12);
+    }
+}
+
+@media(min-width:1200px){
+    .cajaColores{
+        background-color: rgb(2, 165, 130);
+    }
+}
+
+@media(min-width:1400px){
+    .cajaColores{
+        background-color: rgb(151, 2, 165);
+    }
+}
+

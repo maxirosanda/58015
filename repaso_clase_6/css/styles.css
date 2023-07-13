@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedorPrincipal{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,100px);
+    /*grid-template-areas: "navegador encabezado  encabezado  encabezado"
+                         "navegador principal   publicidad  secundario"
+                         "navegador productos   publicidad  secundario"
+                         "pie       pie         pie         pie       ";*/
+}
+
+.navegador {
+    grid-column: 1/2 ;
+    grid-row: 1/4;
+    background-color: blue
+}
+.encabezado{
+    grid-column: 2/5 ;
+    grid-row: 1/2;
+    background-color: blueviolet;
+
+}
+.principal{
+    grid-column: 2/3 ;
+    grid-row: 2/3;
+    background-color: brown;
+}
+.productos{
+    grid-column: 2/3 ;
+    grid-row: 3/4;
+    background-color: rgb(13, 148, 42);
+}
+.publicidad{
+    grid-column: 3/4;
+    grid-row: 2/4;
+    background-color: cadetblue;
+}
+.secundario{
+    grid-column: 4/5;
+    grid-row: 2/4;
+    background-color: rgb(65, 6, 92);
+}
+.pie{
+    grid-column: 1/5;
+    grid-row: 4/5;
+    background-color: chocolate;
+}
