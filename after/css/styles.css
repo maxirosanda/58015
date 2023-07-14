@@ -25,11 +25,52 @@
     display: flex;
 }
 .navegador ul li a{
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
     text-decoration: none;
     display: block;
     padding: 10px 15px;
     font-size: 20px;
+}
+.navegador ul li a:hover{
+    color: white;
+}
+.navegador .fa-bars{
+    display: none;
+}
+@media(max-width:768px){
+    .navegador .fa-bars{
+        display: block;
+        margin: 10px;
+        font-size: 30px;
+        color: white;
+        order: -1;
+    }
+    .navegador .fa-bars:hover + ul {
+        left: 0;
+    } 
+    .navegador ul {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+    .navegador ul:hover{
+        left: 0;
+    }
+    .navegador ul li a{
+        color: rgba(0, 0, 0, 0.836);
+
+    }
+    .navegador ul li a:hover{
+        color: rgba(0, 0, 0);
+
+    }
 }
 .encabezado{
     background-image: url(../multimedia/img/taller-reparacion.jpg);
@@ -95,6 +136,7 @@
     text-align: center;
 
 }
+
 .pie-de-pagina .info-empresa{
     padding: 15px;
     
@@ -111,6 +153,25 @@
 .pie-de-pagina .redes{
     font-size: 40px;
 
+}
+@media(max-width:768px){
+    .pie-de-pagina{
+        grid-template-columns: 1fr 1fr;
+    }
+    .pie-de-pagina .redes{
+        grid-column: 1/3;
+    
+    }
+}
+@media(max-width:576px){
+    .pie-de-pagina{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .pie-de-pagina .redes{
+        grid-column: auto;
+    
+    }
 }
 .form-contenedor{
     display: grid;
@@ -155,6 +216,38 @@
     border-radius: 5px;
     font-size: 20px;
 
+}
+@media(max-width:1200px){
+    .form-contenedor{
+        grid-template-columns: 576px;
+        grid-template-rows: 400px 600px;
+    }
+    .form-info{
+        border: 5px solid rgb(21, 21, 135);
+        border-bottom: 0px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+    .form-registro{
+        border: 5px solid rgb(21, 21, 135);
+        border-top: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+    }
+
+}
+@media(max-width:557px){
+    .form-contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 400px;
+    }
+    .form-info{
+        border: 0px;
+        padding: 10px;
+    }
+    .form-registro{
+        border: 0px;
+    }
 }
 .whatsapp{
 
