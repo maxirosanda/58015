@@ -92,8 +92,8 @@
     color: white;
 }
 .productos{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;flex-wrap: wrap;
+    
     justify-content: space-around;
 }
 .producto{
@@ -126,7 +126,31 @@
     font-size: 20px;
 
 }
-
+.preguntasFrecuentes{
+    margin: 10px;
+}
+.preguntasFrecuentes h2{
+    font-size: 24px;
+}
+.preguntasFrecuentes ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px;
+}
+.preguntasFrecuentes ul li h3:hover + p{
+    max-height: 400px;
+    transition: 2s;
+}
+.preguntasFrecuentes ul li p:hover{
+    max-height: 400px;
+}
+.preguntasFrecuentes ul li p {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 2s;
+    
+}
 .pie-de-pagina{
     background-color: rgb(21, 21, 135) ;
     color: white;
