@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.navegador {
+  background-color: rgb(177, 10, 10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navegador .fa-bars {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navegador .fa-bars {
+    display: block;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    order: -1;
+  }
+}
+.navegador img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  padding: 10px;
+}
+.navegador ul {
+  list-style: none;
+  display: flex;
+}
+.navegador ul li a {
+  color: rgba(255, 255, 255, 0.815);
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .navegador ul li a {
+    color: rgba(0, 0, 0, 0.836);
+  }
+}
+.navegador ul li a:hover {
+  color: white;
+}
+@media (max-width: 768px) {
+  .navegador ul li a:hover {
+    color: rgb(0, 0, 0);
+  }
+}
+@media (max-width: 768px) {
+  .navegador ul {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 768px) {
+  .navegador:hover {
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navegador .fa-bars:hover + ul {
+    left: 0;
+  }
+}
+.encabezado {
+  background-image: url(../multimedia/img/taller-reparacion.jpg);
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.encabezado h1 {
+  font-size: 48px;
+  color: white;
+}
+.encabezado p {
+  font-size: 24px;
+  color: white;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.productos .producto {
+  width: 270px;
+  border: 1px solid #000000;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.productos .producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.productos .producto h5 {
+  font-size: 20px;
+}
+
+.boton {
+  background-color: rgb(177, 10, 10);
+  color: white;
+  padding: 10px 25px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.pie-de-pagina {
+  background-color: rgb(177, 10, 10);
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .pie-de-pagina {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .pie-de-pagina {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+.pie-de-pagina .info-empresa {
+  padding: 15px;
+}
+.pie-de-pagina .info-empresa h2 {
+  margin: 10px 0px;
+}
+.pie-de-pagina .info-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pie-de-pagina .redes {
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  .pie-de-pagina .redes {
+    grid-column: 1/3;
+  }
+}
+@media (max-width: 576px) {
+  .pie-de-pagina .redes {
+    grid-column: auto;
+  }
+}
+
+.form-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 576px);
+  justify-content: center;
+  margin: 100px 0px 200px 0px;
+}
+.form-contenedor .form-info {
+  background-image: url(../multimedia/img/paisaje1.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 5px solid rgb(177, 10, 10);
+  border-right: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-shadow: 2px 2px 6px #000000;
+}
+.form-contenedor .form-info h3 {
+  font-size: 32px;
+}
+.form-contenedor .form-info p {
+  font-size: 24px;
+}
+.form-contenedor .form-registro {
+  border: 5px solid rgb(177, 10, 10);
+  border-left: 0px;
+  padding: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.form-contenedor .form-registro input {
+  border: 2px solid rgb(21, 21, 135);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .form-contenedor {
+    grid-template-columns: 576px;
+    grid-template-rows: 400px 600px;
+  }
+  .form-info {
+    border: 5px solid rgb(177, 10, 10);
+    border-bottom: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+  .form-registro {
+    border: 5px solid rgb(177, 10, 10);
+    border-top: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+  }
+}
+@media (max-width: 557px) {
+  .form-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 400px;
+  }
+  .form-info {
+    border: 0px;
+    padding: 10px;
+  }
+  .form-registro {
+    border: 0px;
+  }
+}
+.whatsapp {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.whatsapp i {
+  font-size: 48px;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
