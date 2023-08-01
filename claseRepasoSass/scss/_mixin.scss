@@ -1,0 +1,18 @@
+@mixin button ($bg,$width,$bg-hover){
+    width: $width;
+    cursor: pointer;
+    background-color: $bg;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    &:hover{
+        background-color: $bg-hover;
+    }
+}
+
+@mixin flex-basico{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

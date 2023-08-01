@@ -1,146 +1,160 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navegador{
-    background-color: blue;
-    display: flex;
-    justify-content: space-between;
-
-}
-.navegador img{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
-.navegador ul{
-    list-style: none;
-    display: flex;
-    
+.galeria {
+  display: grid;
+  margin: 10px;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 200px);
+  grid-template-areas: "img1  img1  img2  img3" "img1  img1  img4  img4" "img5  img7  img7  img8" "img6  img7  img7  img8" "img9  img9  img9  img8" "img10 img11 img11 img12";
 }
 
-.navegador ul li a{
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding: 10px 20px;
-
-}
-.imagenes{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction:row;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin: 10px 0px;
-}
-.imagenes img{
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-}
-.galeria{
-    display: grid;
-    margin: 10px;
-    gap: 10px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(6,200px) ;
-    grid-template-areas: "img1  img1  img2  img3"
-                         "img1  img1  img4  img4"
-                         "img5  img7  img7  img8"
-                         "img6  img7  img7  img8"
-                         "img9  img9  img9  img8"
-                         "img10 img11 img11 img12" ;
-
-
-}
-.galeria img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-.img1{
-    grid-area: img1;
-    background-image: url(../multimedia/img/galeria/paisaje1.jpg);
-    background-size: cover;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-}
-.img1 h3{
-    font-size: 32px;
-}
-.img1 p{
-    font-size: 20px;
-    text-align: center;
-}
-.img2{
-    grid-area: img2;
-}
-.img3{
-    grid-area: img3;
-}
-.img4{
-    grid-area: img4;
-}
-.img5{
-    grid-area: img5;
-}
-.img6{
-    grid-area: img6;
-}
-.img7{
-    grid-area: img7;
-}
-.img8{
-    grid-area: img8;
-}
-.img9{
-    grid-area: img9;
-}
-.img10{
-    grid-area: img10;
-}
-.img11{
-    grid-area: img11;
-}
-.img12{
-    grid-area: img12;
+.img1 {
+  grid-area: img1;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 300px 100px ;
-    /*height: 500px;*/
-    column-gap: 30px;
-    row-gap: 10px;
-    margin: 10px;
-    padding: 10px;
-    background-color: aqua;
-    /*justify-content: space-around;
-    align-content: center;*/
-    /*justify-items: center;
-    align-items: center;*/
+.img2 {
+  grid-area: img2;
+}
 
+.img3 {
+  grid-area: img3;
+}
 
+.img4 {
+  grid-area: img4;
 }
-.grid-item{
-    background-color: blueviolet;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+
+.img5 {
+  grid-area: img5;
 }
-.item2{
-    justify-self: center;
-    align-self: center;
+
+.img6 {
+  grid-area: img6;
 }
+
+.img7 {
+  grid-area: img7;
+}
+
+.img8 {
+  grid-area: img8;
+}
+
+.img9 {
+  grid-area: img9;
+}
+
+.img10 {
+  grid-area: img10;
+}
+
+.img11 {
+  grid-area: img11;
+}
+
+.img12 {
+  grid-area: img12;
+}
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img1 {
+  background-image: url(../multimedia/img/galeria/paisaje1.jpg);
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.img1 h3 {
+  font-size: 32px;
+}
+
+.img1 p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.navegador {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navegador img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.navegador ul {
+  list-style: none;
+  display: flex;
+}
+
+.navegador ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+.imagenes img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 100px;
+  /*height: 500px;*/
+  column-gap: 30px;
+  row-gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: aqua;
+  /*justify-content: space-around;
+  align-content: center;*/
+  /*justify-items: center;
+  align-items: center;*/
+}
+
+.grid-item {
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.item2 {
+  justify-self: center;
+  align-self: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @if $dark == activo {
+        background-color: black;
+        color: white;
+    }@else{
+        background-color: white;
+        color: black;
+    }
+}

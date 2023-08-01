@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blue {
+  color: blue;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.primario {
+  color: #861f1f;
+}
+
+.secundario {
+  color: #0a7171;
+}
+
+.terciario {
+  color: #c6bf06;
+}
+
+.acento {
+  color: #3203a6;
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 10%;
+  }
+  .col-md-2 {
+    width: 20%;
+  }
+  .col-md-3 {
+    width: 30%;
+  }
+  .col-md-4 {
+    width: 40%;
+  }
+  .col-md-5 {
+    width: 50%;
+  }
+  .col-md-6 {
+    width: 60%;
+  }
+  .col-md-7 {
+    width: 70%;
+  }
+  .col-md-8 {
+    width: 80%;
+  }
+  .col-md-9 {
+    width: 90%;
+  }
+  .col-md-10 {
+    width: 100%;
+  }
+}
+.j-c-around {
+  justify-content: space-around;
+}
+
+.publicidad {
+  width: 450px;
+  background-color: #0ea573;
+  box-shadow: 8px 7px 15px 5px rgba(0, 0, 0, 0.6156862745);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.publicidad img {
+  width: 200px;
+}
+.publicidad .info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.publicidad .info h3, .publicidad .info p {
+  color: white;
+}
+.publicidad .info button {
+  width: 120px;
+  cursor: pointer;
+  background-color: #ae1313;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.publicidad .info button:hover {
+  background-color: #9e2828;
+}
+
+.productos button {
+  width: 200px;
+  cursor: pointer;
+  background-color: #0991a0;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.productos button:hover {
+  background-color: #0ca5b6;
+}
+
+.footer {
+  background-color: #861f1f;
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */

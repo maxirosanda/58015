@@ -1,0 +1,32 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@each $color in $colores {
+    .#{$color}{
+        color: $color;
+    }
+}
+@each $clave,$valor in $coloresPresonalizados{
+    .#{$clave}{
+        color:$valor;
+    }
+}
+
+@for $i from 1 to 11{
+    .col-#{$i}{
+        width: 10% * $i;
+    }
+}
+
+@media(min-width:768px){
+    @for $i from 1 to 11{
+        .col-md-#{$i}{
+            width: 10% * $i;
+        }
+    }
+}
+.j-c-around{
+    justify-content: space-around;
+}
