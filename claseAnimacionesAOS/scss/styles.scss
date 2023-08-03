@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.tarjeta{
+    width: 450px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 5px;
+    .info{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    img{
+        width: 200px;
+    }
+}
+.paisaje{
+    width: 450px;
+}
