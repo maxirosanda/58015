@@ -40,6 +40,7 @@
         }
         @media(max-width:768px){
             position: fixed;
+            z-index: 1;
             top: 0;
             left: -300px;
             width: 250px;
@@ -50,12 +51,13 @@
             padding-top: 50px;
             transition: 0.5s;
         }
-    }
-    &:hover{
-        @media(max-width:768px){
-            left: 0;
+        &:hover{
+            @media(max-width:768px){
+                left: 0;
+            }
         }
     }
+  
 }
 
 @media(max-width:768px){
